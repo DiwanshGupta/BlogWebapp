@@ -3,8 +3,9 @@ import { useSession } from "next-auth/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import ReactQuill from "react-quill";
+
 import "react-quill/dist/quill.bubble.css";
+import dynamic from 'next/dynamic';
 import {
   getStorage,
   ref,
@@ -18,7 +19,9 @@ import { app } from "../utils/firebase";
 import axios from "axios";
 
 const storage = getStorage(app);
-
+const ReactQuill = dynamic(() => import('react-quill'), {
+  ssr: false, // Set ssr to false to ensure the component is only rendered on the client side
+});
 const Writepages = () => {
   const [open, setopen] = useState(false);
   const [file, setFile] = useState(null);
@@ -161,13 +164,15 @@ const Writepages = () => {
         </div>
       </div>{" "}
       <div className="text-2xl paracontainer text-gree">
-        <ReactQuill
-          theme="bubble"
-          value={value}
-          onChange={setValue}
-          className=""
-          placeholder="Tell your Story"
-        />
+      {typeof window !== 'undefined' && (
+            <ReactQuill
+              theme="bubble"
+              value={value}
+              onChange={setValue}
+              className=""
+              placeholder="Tell your Story"
+            />
+          )}
       </div>
       <div className="items-center justify-center absolute bottom-3 flex">
         <button
