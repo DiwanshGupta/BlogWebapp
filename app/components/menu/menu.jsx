@@ -4,7 +4,7 @@ import React from "react";
 function Menu() {
   return (
     <div className="py-8 px-1">
-      <div>What's Hot</div>
+      <div>What&aposs Hot</div>
       <div className="font-semibold text-xl">Most Popular</div>
       <div>
         {" "}
