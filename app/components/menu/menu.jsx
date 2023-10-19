@@ -11,7 +11,7 @@ function Menu() {
         <div className="">
           <div className="flex-1 px-3 py-4">
             <span className="font-semibold text-white border border-white bg-red-500 rounded-3xl px-2 ">
-              <Link href={`/Blog?cat=Travel`}> Travel</Link>
+              <Link href={`/Blog?cat=Travel&apos;`}> Travel</Link>
             </span>
             <div className="flex font-medium text-slate-600 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,7 +24,7 @@ function Menu() {
         <div className="">
           <div className="flex-1 px-3 py-4">
             <span className="font-semibold text-white border border-white bg-yellow-400 rounded-3xl px-2 ">
-              <Link href={`/Blog?cat=Culture`}> Culture</Link>
+              <Link href={`/Blog?cat=Culture&apos;`}> Culture</Link>
             </span>
             <div className="flex font-medium text-slate-600 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -37,7 +37,7 @@ function Menu() {
         <div className="">
           <div className="flex-1 px-3 py-4">
             <span className="font-semibold text-white border border-white bg-blue-400 rounded-3xl px-2 ">
-              <Link href={`/Blog?cat=Style`}> Style</Link>
+              <Link href={`/Blog?cat=Style&apos;`}> Style</Link>
             </span>
             <div className="flex font-medium text-slate-600 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -50,7 +50,7 @@ function Menu() {
         <div className="">
           <div className="flex-1 px-3 py-4">
             <span className="font-semibold text-white border border-white bg-orange-600 rounded-3xl px-2 ">
-              <Link href={`/Blog?cat=Food`}> Food</Link>
+              <Link href={`/Blog?cat=Food&apos;`}> Food</Link>
             </span>
             <div className="flex font-medium text-slate-600 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
