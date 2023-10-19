@@ -34,6 +34,7 @@ const Category = async () => {
       <div className="m-2 flex flex-wrap gap-5 justify-around">
         {data?.map((item, index) => (
           <div
+            key={index}
             className={`w-56 h-20 items-center justify-center flex rounded-2xl ${
               colors[index % colors.length]
             }`}
@@ -41,7 +42,6 @@ const Category = async () => {
             <Link
               href={`/Blog?cat=${item.tittle}`}
               className="flex flex-row m-auto p-2  items-center justify-center "
-              key={item._id}
             >
               <img src={item.img} className="w-10 h-10 rounded-full" />
               <div className="font-semibold mx-2">{item.tittle}</div>
@@ -52,5 +52,4 @@ const Category = async () => {
     </div>
   );
 };
-
 export default Category;
