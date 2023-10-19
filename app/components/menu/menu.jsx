@@ -3,7 +3,7 @@ import React from "react";
 
 function Menu() {
   return (
-    <div className="py-8 px-1">
+      <div className="py-8 px-1">
       <div>What's Hot</div>
       <div className="font-semibold text-xl">Most Popular</div>
       <div>
@@ -11,13 +11,13 @@ function Menu() {
         <div className="">
           <div className="flex-1 px-3 py-4">
             <span className="font-semibold text-white border border-white bg-red-500 rounded-3xl px-2 ">
-              <Link href={`/Blog?cat=Travel`}> Travel</Link>
+              <Link href={`/Blog?cat=Travel&apos;`}> Travel</Link>
             </span>
             <div className="flex font-medium text-slate-600 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
             <span className="font-semibold text-base">
-              Diwansh Gupta &apos<span className="text-slate-600">11.2.2003</span>
+              Diwansh Gupta &apos;<span className="text-slate-600">11.2.2003</span>
             </span>
           </div>
         </div>
@@ -30,7 +30,7 @@ function Menu() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
             <span className="font-semibold text-base">
-              Diwansh Gupta &apos<span className="text-slate-600">11.2.2003</span>
+              Diwansh Gupta &apos;<span className="text-slate-600">11.2.2003</span>
             </span>
           </div>
         </div>
@@ -43,7 +43,7 @@ function Menu() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
             <span className="font-semibold text-base">
-              Diwansh Gupta &apos<span className="text-slate-600">11.2.2003</span>
+              Diwansh Gupta &apos;<span className="text-slate-600">11.2.2003</span>
             </span>
           </div>
         </div>{" "}
@@ -56,12 +56,13 @@ function Menu() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </div>
             <span className="font-semibold text-base">
-              Diwansh Gupta &apos<span className="text-slate-600">11.2.2003</span>
+              Diwansh Gupta &apos;<span className="text-slate-600">11.2.2003</span>
             </span>
           </div>
         </div>
       </div>
     </div>
+
   );
 }
 
