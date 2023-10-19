@@ -2,7 +2,7 @@ This is Blog web App
 In this YOu can see People Blogs, ANd Comments on the post.
 
 here is the preview:-
-[Screenshot 2023-10-19 131110.png]
+[preview1](Screenshot 2023-10-19 131110.png)
 
 
 
